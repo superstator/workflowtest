@@ -19,4 +19,4 @@ jobs:
 #    - name: Build the Docker image
 #      run: ./test.sh
     - name: Get context
-      run: echo '${{ toJson(github) }}'
+      run: echo '${{ github.event.release.tag_name }}'
