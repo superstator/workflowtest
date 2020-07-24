@@ -19,4 +19,4 @@ jobs:
 #    - name: Build the Docker image
 #      run: ./test.sh
     - name: Get SHA
-      run: echo ${{ github.sha }} && echo ${{ github.event.release.action }}
+      run: echo ${{ github.sha }} && echo ${{ github.ref }}
