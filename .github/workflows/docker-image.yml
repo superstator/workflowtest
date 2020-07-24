@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: ./test.sh
+#    - name: Build the Docker image
+#      run: ./test.sh
     - name: Get SHA
-      run: echo ${{ github.sha }} && echo ${{ github.event }}
+      run: echo ${{ github.sha }} && echo ${{ github.event.action }}
